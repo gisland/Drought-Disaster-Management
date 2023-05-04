@@ -1,0 +1,591 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aa/ontologies/2022/9/untitled-ontology-37#"
+     xml:base="http://www.semanticweb.org/aa/ontologies/2022/9/untitled-ontology-37"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aa/ontologies/2022/9/untitled-ontology-37"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#After -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#After">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EarlyWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Before -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Before">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EarlyWarning"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Induce -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Induce">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SecondaryDisasters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#InducedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SecondaryDisasters"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#homologous -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#homologous">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AgriculturalWaterShortage"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DomesticWaterShortage"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IndustrialWaterShortage"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WaterShortage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AirDrying"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Pest"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SoilCracking"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#VegetationWithering"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WaterLevelFall"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WaterShortage"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SecondaryDisasters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AgriculturalWaterShortage -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AgriculturalWaterShortage"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AirDrying -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AirDrying"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Area -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Area">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#CropCultivationLevel -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CropCultivationLevel">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Dam -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Dam">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EngineeringMeasures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Data -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Data">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Non-engineeringMeasures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DisasterResistance -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DisasterResistance">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DisasterinducingFactors -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DisasterinducingFactors">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DomesticWaterShortage -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DomesticWaterShortage"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DrainageDensity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DrainageDensity">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Duration -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Duration">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EarlyWarning -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EarlyWarning"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EcologicalEnvironment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EcologicalEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EngineeringMeasures -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EngineeringMeasures">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DisasterPreventio&amp;Mitigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ExposureDegree -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExposureDegree">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HazardAffectedBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ExposureDuration -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExposureDuration">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ExposureDegree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ExposureQuantity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExposureQuantity">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ExposureDegree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Frequency -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Frequency">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GDP -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GDP">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GovernmentIntervention -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GovernmentIntervention">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HazardAffectedBody -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#HazardAffectedBody">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HazardInducingEnvironment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#HazardInducingEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HumanFactors -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#HumanFactors">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DisasterinducingFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#IndustrialWaterShortage -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IndustrialWaterShortage"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Intensity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Intensity">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#LowWaterUtilization -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LowWaterUtilization">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HumanFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Methods -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Methods">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Non-engineeringMeasures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#NaturalEnvironment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NaturalEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HazardInducingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#NaturalFactors -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NaturalFactors">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DisasterinducingFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Non-engineeringMeasures -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Non-engineeringMeasures">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DisasterPreventio&amp;Mitigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PerCapitaIncome -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PerCapitaIncome">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Pest -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Pest"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Population -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Population">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HumanFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Region -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Region">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Non-engineeringMeasures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Reservoir -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Reservoir">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EngineeringMeasures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SecondaryDisasters -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SecondaryDisasters"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Sensibility -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Sensibility">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SocialEconomy -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SocialEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SocialEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HazardInducingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SoilCracking -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SoilCracking"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SoilType -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SoilType">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Terrain -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Terrain">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VegetationCoverage -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VegetationCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NaturalEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VegetationDestruction -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VegetationDestruction">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HumanFactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VegetationWithering -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VegetationWithering"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Vulnerability -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HazardAffectedBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WaterDiversionProject -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WaterDiversionProject">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EngineeringMeasures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WaterLevelFall -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WaterLevelFall"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WaterShortage -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WaterShortage"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DisasterPreventio&amp;Mitigation -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DisasterPreventio&amp;Mitigation">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AgriculturalDroughtDisaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#AgriculturalDroughtDisaster">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#CropFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#CropFailure"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ForestFire -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ForestFire"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HydrologicDroughtDisaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#HydrologicDroughtDisaster">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#LandSubsidence -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#LandSubsidence"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MeteorologicalDroughtDisaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#MeteorologicalDroughtDisaster">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OrangeAlert -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#OrangeAlert">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EarlyWarning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Pest -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Pest"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RedAlert -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#RedAlert">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EarlyWarning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SaltwaterIntrusion -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#SaltwaterIntrusion"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SocioeconomicDroughtDisaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#SocioeconomicDroughtDisaster">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DroughtDisaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Wind-sand -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Wind-sand"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#YellowAlert -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#YellowAlert">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EarlyWarning"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
